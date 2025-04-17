@@ -260,6 +260,55 @@ Here's the breakdown of the most demanded skills for entry/junior level data sci
 
 *Table of the demand for the top 5 skills for entry/junior level data science jobs and internships*
 
+### 4. Skills Based on Salary
+Exploring the average salaries associated with different skills revealed which skills are the highest paying.
+
+```sql
+-- for data analyst
+SELECT 
+    skills,
+    ROUND(AVG(salary_year_avg), 2) AS avg_salary
+FROM
+    job_postings_fact AS jpf
+INNER JOIN skills_job_dim AS sjd ON jpf.job_id = sjd.job_id
+INNER JOIN skills_dim AS sd ON sjd.skill_id = sd.skill_id
+WHERE 
+	(job_title ILIKE '%Data Analyst intern%' 
+        OR job_title ILIKE '%Entry level Data Analyst%' 
+        OR job_title ILIKE '%Junior Data Analyst%')
+    AND salary_year_avg IS NOT NULL
+GROUP BY
+	skills
+ORDER BY
+	avg_salary DESC
+LIMIT 30
+```
+
+Here's a breakdown of the results for top paying skills for entry/junior/intern data analysts in 2023:
+- Top-paying entry-level roles often blend data analytics with software engineering and machine learning skills. Tools like Docker, Jenkins, Java, Spring, and TensorFlow top the list with average salaries around $103K. This indicates that employers are rewarding junior analysts who bring cross-functional abilities in DevOps, backend development, or AI engineering—areas typically outside the standard analyst toolkit.
+- Foundational data analytics tools such as SQL, Python, and R remain essential but offer more moderate pay unless paired with specialized expertise. These skills fall within the $65K–$67K range, showing that while they are in high demand, their widespread availability tempers the salary premium. Analysts looking to boost pay may need to layer these skills with cloud tools, machine learning, or software development experience.
+- Soft tools that support collaboration, reporting, and enterprise workflows also appear in higher-paying job listings. Platforms like Jira, Confluence, PowerPoint, and SharePoint are associated with roles averaging $73K–$80K. This suggests that communication, documentation, and cross-team collaboration are seen as valuable traits even in technical roles—especially in larger or client-facing environments.
+
+| Skill        | Average Salary ($) |
+|--------------|--------------------|
+| Docker       | 103,000.00         |
+| Jenkins      | 103,000.00         |
+| Java         | 103,000.00         |
+| Spring       | 103,000.00         |
+| C++          | 103,000.00         |
+| TensorFlow   | 103,000.00         |
+| C#           | 82,500.00          |
+| SAS          | 82,500.00          |
+| PHP          | 82,500.00          |
+| Jira         | 80,000.00          |
+| Confluence   | 80,000.00          |
+| JavaScript   | 77,704.50          |
+| MATLAB       | 76,928.57          |
+| Word         | 75,300.00          |
+| Oracle       | 75,204.50          |
+
+*Table of the average salary for the top 15 paying skills for entry/junior/intern level data analyst roles*
+
 # What I learned
 
 # Conclusions
