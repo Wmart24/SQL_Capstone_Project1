@@ -16,6 +16,12 @@ Determined and passionate about learning about data and improving my SQL skills 
 5. What are the most optimal skills to learn (aka it's in high demand and a high paying skill)?
 
 # Tools I used
+To explore the data job market, I made use of several important tools:
+
+- **SQL**: This served as the foundation of my analysis, enabling me to query the database and extract valuable insights.
+- **PostgreSQL**: The chosen database management systme, ideal for handling the job posting data.
+- **Visual Studio Code**: My go-to for database management and executing SQL queries.
+- **Git & Github**: Essential for version control and sharing my SQL scripts and analysis, ensuring collaboration and project tracking.
 
 # The Analysis
 
