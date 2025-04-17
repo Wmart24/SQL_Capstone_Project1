@@ -5,6 +5,15 @@ this project explores 💰 top paying jobs, 🔥 in demand skills, and 📈 wher
 🔍 SQL queries? Check them out here: [project_sql folder](/project_sql/)
 
 # Background
+Determined and passionate about learning about data and improving my SQL skills in order to land my first internship or my first job in the data world, I sought out different articles, and videos. I came across a youtube video teaching SQL that contained this dataset, a dataset that allows me to explore and navigate the 2023 data analyst/scientist job market more effectively. The data was obtained from Luke Barousse's [SQL course](https://www.lukebarousse.com/sql), containing insights on job titles, salaries, locations, and essential skills.
+
+### The questions I answered through my SQL queries were:
+
+1. What are the available entry level/junior data analyst or data science jobs or internships?
+2. What skills are required for the entry level data analyst or data science jobs or internships?
+3. What are the most in demand skills for entry/junior/intern level data analysts/scientists?
+4. What are the top skills based on salary?
+5. What are the most optimal skills to learn (aka it's in high demand and a high paying skill)?
 
 # Tools I used
 
