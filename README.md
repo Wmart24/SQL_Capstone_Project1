@@ -26,7 +26,7 @@ To explore the data job market, I made use of several important tools:
 # The Analysis
 Each query for this project aimed at investigating specific aspects of the data job market. Here's how I approached each question: 
 
-### 1. Available entry level/junior data analyst/science jobs or internships
+### 1. Available Entry Level//junior Data Analyst/Science /jobs or Internships
 To identify the available roles I created two queries, one for data analyst and the other for data scientist positions, filtering them by average yearly salary and location, focusing on remote jobs along with those based in New York or Florida. This query highlights the available opportunities in the field.
 
 ```sql
@@ -54,7 +54,7 @@ ORDER BY
     salary_year_avg
 ```
 
-Here's the breakdown of the available entry/junior level data analyst roles and internships in 2023:
+Here's the breakdown of the available entry/junior level Data Analyst roles and internships in 2023:
 - Junior and entry-level data analyst roles in 2023 were dominated by remote opportunities, with “Anywhere” being the most frequent job location. Major cities like New York, Chicago, and Los Angeles also remained top destinations, showing a healthy mix of remote and in-person demand.
 - A small number of companies, such as Get It Recruit and DonorSearch, accounted for a significant portion of job listings, often posting repetitive titles like “Junior Data Analyst” or “Entry-Level Data Analyst.” This suggests that many roles are posted at scale or involve recurring openings.
 - Most salaries for these roles fall between $40,000 and $70,000, with only a few breaking into six figures. Higher-paying roles are likely tied to technical specializations or companies in high-cost areas, while the average reflects typical entry-level compensation.
@@ -88,7 +88,7 @@ ORDER BY
     salary_year_avg
 ```
 
-Here's the breakdown of the available entry/junior level data scientist roles and internships in 2023:
+Here's the breakdown of the available entry/junior level Data Scientist roles and internships in 2023:
 - Remote roles dominate the early-career data science space, with “Anywhere” leading as the top job location, suggesting flexibility and wide geographic reach for candidates.
 - DonorSearch and a handful of tech-forward companies posted the majority of listings, often using “Junior Data Scientist” and “Intern” titles, indicating standardized role offerings for fresh talent.
 - Salaries mostly range from $55K to $75K, with higher-paying roles tied to advanced technical requirements such as machine learning, cloud computing, or big data infrastructure.
@@ -137,7 +137,7 @@ ORDER BY
     salary
 ```
 
-Here's the breakdown of the most demanded skills for the available entry/junior level data analyst jobs and internships in 2023:
+Here's the breakdown of the most demanded skills for the available entry/junior level Data Analyst jobs and internships in 2023:
 - Technical tools like SQL, Python, and Excel are foundational for data analyst roles, with SQL leading in demand for structured data querying, and Python recognized for its flexibility in cleaning, automation, and basic modeling tasks. Excel remains widely used for quick, business-oriented analysis.
 - Data visualization and reporting skills are highly valued, with frequent mentions of Tableau, Power BI, and even PowerPoint—highlighting the importance of clearly communicating insights to stakeholders in both technical and business-friendly formats.
 - A well-rounded data analyst is expected to combine technical proficiency with business awareness and collaboration, as shown by the appearance of tools like Git, Jupyter, Snowflake, and Google Sheets, alongside soft skills like communication and problem-solving.
@@ -180,14 +180,14 @@ INNER JOIN skills_dim AS sd ON sjd.skill_id = sd.skill_id
 ORDER BY
     salary
 ```
-Here's the breakdown of the most demanded skills for the available entry/junior level data science jobs and internships in 2023:
+Here's the breakdown of the most demanded skills for the available entry/junior level Data Science jobs and internships in 2023:
 - Python and SQL are the core technical foundations for entry-level data scientists, widely used for data cleaning, querying, analysis, and machine learning. These languages dominate job postings and form the base of most data workflows.
 - Analytical and modeling skills such as machine learning, statistics, and data analysis are highly emphasized, along with tools like scikit-learn, TensorFlow, and R—especially in roles focused on predictive modeling, academic analysis, or AI.
 - Collaboration and communication tools like Git, Jupyter, Tableau, and PowerPoint also appear, showing that employers value not only technical fluency but also the ability to present findings and work within reproducible, team-driven environments.
 ![2_top_10_skills_DS](https://github.com/user-attachments/assets/27cff3d1-3f57-4a2d-8cb6-361842cc35c5)
 * Bar graph visualization the count of skills for entry-level and internship data science roles in 2023; ChatGPT generated this graph from my SQL query results*
 
-### 3. In Demand Skills for Entry/Junior level roles and internships
+### 3. In Demand Skills for Entry/Junior Level Roles and Internships
 This query helped indentify the skills most frequently requested in job postings, directing focus to areas with high demand
 
 ```sql
@@ -210,7 +210,7 @@ ORDER BY
 LIMIT 5
 ```
 
-Here's the breakdown of the most demanded skills for entry/junior level data analyst jobs and internships in 2023:
+Here's the breakdown of the most demanded skills for entry/junior level Data Dnalyst jobs and internships in 2023:
 - SQL and Excel top the list of most in-demand skills, with over 2,500 mentions each—underscoring their continued dominance in entry-level data analyst roles for tasks like querying databases, building reports, and performing quick analyses.
 - Python stands out as a key differentiator, showing strong demand across nearly 2,000 postings. Its presence reflects the increasing need for analysts who can automate workflows, clean data efficiently, and perform basic statistical modeling.
 - Visualization tools like Tableau and Power BI are essential for storytelling with data, appearing in over 1,000 postings each. These tools enable early-career analysts to present findings clearly, making them highly valuable for stakeholder communication and business impact.
@@ -223,7 +223,7 @@ Here's the breakdown of the most demanded skills for entry/junior level data ana
 | Tableau   | 1,407        |
 | Power BI  | 1,171        |
 
-*Table of the demand for the top 5 skills for entry/junior level data analyst jobs and internships*
+*Table of the demand for the top 5 skills for entry/junior level Data Analyst jobs and internships*
 
 ```sql
 -- for data science
@@ -244,7 +244,7 @@ ORDER BY
 	demand_count DESC
 LIMIT 5
 ```
-Here's the breakdown of the most demanded skills for entry/junior level data science jobs and internships in 2023:
+Here's the breakdown of the most demanded skills for entry/junior level Data Science jobs and internships in 2023:
 - Python is by far the most dominant skill, appearing in over 3,600 job postings—nearly double the demand of any other skill. This reinforces Python’s position as the core language for data science, powering everything from data preprocessing and analysis to machine learning and deep learning.
 - SQL remains essential, with close to 2,000 mentions, highlighting its importance in querying structured data and integrating with production databases—often forming the bridge between data science and data engineering tasks.
 - R and SAS are still in demand, especially in roles involving statistical modeling or legacy systems. While not as widely used as Python, they remain critical in specific industries like healthcare, finance, and research-heavy sectors.
@@ -258,7 +258,7 @@ Here's the breakdown of the most demanded skills for entry/junior level data sci
 | Tableau |   981        |
 | SAS     |   860        |
 
-*Table of the demand for the top 5 skills for entry/junior level data science jobs and internships*
+*Table of the demand for the top 5 skills for entry/junior level Data Science jobs and internships*
 
 ### 4. Skills Based on Salary
 Exploring the average salaries associated with different skills revealed which skills are the highest paying.
@@ -284,7 +284,7 @@ ORDER BY
 LIMIT 30
 ```
 
-Here's a breakdown of the results for top paying skills for entry/junior/intern data analysts in 2023:
+Here's a breakdown of the results for top paying skills for entry/junior/intern Data Analysts in 2023:
 - Top-paying entry-level roles often blend data analytics with software engineering and machine learning skills. Tools like Docker, Jenkins, Java, Spring, and TensorFlow top the list with average salaries around $103K. This indicates that employers are rewarding junior analysts who bring cross-functional abilities in DevOps, backend development, or AI engineering—areas typically outside the standard analyst toolkit.
 - Foundational data analytics tools such as SQL, Python, and R remain essential but offer more moderate pay unless paired with specialized expertise. These skills fall within the $65K–$67K range, showing that while they are in high demand, their widespread availability tempers the salary premium. Analysts looking to boost pay may need to layer these skills with cloud tools, machine learning, or software development experience.
 - Soft tools that support collaboration, reporting, and enterprise workflows also appear in higher-paying job listings. Platforms like Jira, Confluence, PowerPoint, and SharePoint are associated with roles averaging $73K–$80K. This suggests that communication, documentation, and cross-team collaboration are seen as valuable traits even in technical roles—especially in larger or client-facing environments.
@@ -307,7 +307,151 @@ Here's a breakdown of the results for top paying skills for entry/junior/intern 
 | Word         | 75,300.00          |
 | Oracle       | 75,204.50          |
 
-*Table of the average salary for the top 15 paying skills for entry/junior/intern level data analyst roles*
+*Table of the average salary for the top 15 paying skills for entry/junior/intern level Data Analyst roles*
+
+```sql
+-- for data science
+SELECT 
+    skills,
+    ROUND(AVG(salary_year_avg), 2) AS avg_salary
+FROM
+    job_postings_fact AS jpf
+INNER JOIN skills_job_dim AS sjd ON jpf.job_id = sjd.job_id
+INNER JOIN skills_dim AS sd ON sjd.skill_id = sd.skill_id
+WHERE 
+	(job_title ILIKE '%Data Science intern%' 
+	OR job_title ILIKE '%Entry level Data Scien%' 
+	OR job_title ILIKE '%Junior Data Scien%')
+    AND salary_year_avg IS NOT NULL
+GROUP BY
+	skills
+ORDER BY
+	avg_salary DESC
+LIMIT 30
+```
+Here's a breakdown of the results for top paying skills for entry/junior/intern Data Scientists in 2023:
+- Big data engineering & orchestration skills top the salary charts. Tools like Hadoop ($115K), Airflow ($105K), Kafka, and Spark are strongly associated with higher-paying roles. These suggest that early-career data scientists who bring data pipeline, distributed computing, and workflow orchestration expertise are positioned for higher compensation—blurring the line between data science and data engineering.
+- Less common but highly technical languages and tools boost pay significantly. Skills like Perl, Scala, and Neo4j (graph databases) command six-figure salaries, reflecting either niche expertise or demand for rare capabilities in specialized applications like natural language processing, legacy systems, or advanced network analysis.
+- Cloud, backend, and infrastructure tools round out high-paying entry-level profiles. Familiarity with AWS, Linux, Java, Spring, Chef, and GitHub/GitLab are tied to roles averaging $85K–$95K. These skills suggest that even junior data scientists are expected to engage with production environments, deployment pipelines, or CI/CD systems, especially in more tech-focused companies.
+
+| Skill         | Average Salary ($) |
+|---------------|--------------------|
+| Hadoop        | 115,000.00         |
+| Perl          | 115,000.00         |
+| Airflow       | 105,130.00         |
+| Jira          | 105,130.00         |
+| Neo4j         | 104,050.00         |
+| SPSS          | 102,095.00         |
+| Scala         | 100,833.75         |
+| Kafka         | 99,912.50          |
+| Django        | 97,500.00          |
+| GitHub        | 96,594.67          |
+| Splunk        | 95,528.13          |
+| Spark         | 94,477.55          |
+| Elasticsearch | 94,242.88          |
+| Go            | 94,050.50          |
+| IBM Cloud     | 92,672.50          |
+
+*Table of the average salary for the top 15 paying skills for entry/junior/intern level Data Scientist roles*
+
+### 5. Most Optimal Skills to Learn
+Combining insights from demand and salary data, this query aimed to pinpoint skills that are both in high demand and have high salaries, offering a strategic focus for skill development.
+
+```sql
+-- for data analysis
+SELECT
+    sd.skill_id,
+    sd.skills,
+    COUNT(sjd.job_id) AS demand_count,
+    ROUND(AVG(jpf.salary_year_avg), 2) AS avg_salary
+FROM
+    job_postings_fact AS jpf
+INNER JOIN skills_job_dim AS sjd ON jpf.job_id = sjd.job_id
+INNER JOIN skills_dim AS sd ON sjd.skill_id = sd.skill_id
+WHERE
+    (job_title ILIKE '%Data Analyst intern%' 
+        OR job_title ILIKE '%Entry level Data Analyst%' 
+        OR job_title ILIKE '%Junior Data Analyst%')
+        AND (job_location ILIKE '%New York%' 
+        OR job_location ILIKE '%Florida%' 
+        OR job_location ILIKE '%Anywhere%%')
+    AND salary_year_avg IS NOT NULL
+GROUP BY
+    sd.skill_id
+HAVING
+    COUNT(sjd.job_id) > 2
+ORDER BY
+    avg_salary DESC,
+    demand_count DESC
+```
+
+Here's a breakdown of the most optimal skills for entry/junior/intern level Data Analysts in 2023:
+- Tableau, Python, and Excel strike the best balance between demand and salary. Each skill appears in multiple job postings and commands an average salary around or above $69,000, making them key tools for both data analysis and communication.
+- SQL remains the most in-demand skill with 12 mentions, offering a strong salary average of $68,006.58. It’s an essential foundation for almost any data analyst role and consistently ranks at the top across demand and compensation charts.
+- R and Power BI are valuable supporting skills, offering salaries above $62K, especially useful in roles with statistical or dashboarding components. While their demand is slightly lower, they often appear in roles requiring more analytical depth or business intelligence capabilities.
+- Word and PowerPoint may not be technical, but they still appear in high-paying analyst roles. This reflects a consistent expectation for analysts to communicate findings through documentation and presentation—important soft tools alongside technical skills.
+
+| Skill       | Demand Count | Average Salary ($) |
+|-------------|---------------|---------------------|
+| SQL         | 12            | 68,006.58           |
+| Excel       | 9             | 69,722.22           |
+| Python      | 7             | 70,154.14           |
+| Tableau     | 5             | 70,515.80           |
+| R           | 5             | 68,015.80           |
+| Word        | 3             | 65,000.00           |
+| PowerPoint  | 3             | 65,000.00           |
+| Power BI    | 3             | 62,859.67           |
+
+*Table of the most optimal skills for entry/junior/intern level Data Analysts sorted by demand count*
+
+```sql
+-- for data science
+SELECT
+    sd.skill_id,
+    sd.skills,
+    COUNT(sjd.job_id) AS demand_count,
+    ROUND(AVG(jpf.salary_year_avg), 2) AS avg_salary
+FROM
+    job_postings_fact AS jpf
+INNER JOIN skills_job_dim AS sjd ON jpf.job_id = sjd.job_id
+INNER JOIN skills_dim AS sd ON sjd.skill_id = sd.skill_id
+WHERE
+    (job_title ILIKE '%Data Science intern%' 
+	OR job_title ILIKE '%Entry level Data Scien%' 
+	OR job_title ILIKE '%Junior Data Scien%')
+	AND (job_location ILIKE '%New York%' 
+	OR job_location ILIKE '%Florida%' 
+	OR job_location ILIKE '%Anywhere%%')
+    AND salary_year_avg IS NOT NULL
+GROUP BY
+    sd.skill_id
+HAVING
+    COUNT(sjd.job_id) > 2
+ORDER BY
+    avg_salary DESC,
+    demand_count DESC
+```
+
+Here's a breakdown of the most optimal skills for entry/junior/intern level Data Scientists in 2023:
+- Python and SQL top the demand list, appearing in 18 and 16 job postings respectively, with strong average salaries above $80K. These are must-have foundational tools for data wrangling, querying, and building models in production environments.
+- R stands out as a top-paying skill, with an average salary of $87,475.38 and 13 mentions—making it especially valuable in statistically intensive or research-heavy roles such as healthcare, academia, or finance.
+- Databricks, SAS, and MATLAB are great secondary tools for boosting pay. Though demand is more niche (3–7 postings), these skills often lead to roles in enterprise, cloud-based pipelines, or data warehousing, with average salaries ranging from $75K to $85K.
+- Skills like VBA, HTML, JavaScript, and Oracle may not be core to data science, but they offer competitive pay and demonstrate value in hybrid roles that cross into scripting, automation, or legacy system integration.
+
+| Skill      | Demand Count | Average Salary ($) |
+|------------|---------------|---------------------|
+| Python     | 18            | 81,482.22           |
+| SQL        | 16            | 80,178.13           |
+| R          | 13            | 87,475.38           |
+| SAS        | 7             | 78,571.43           |
+| Databricks | 3             | 84,943.33           |
+| MATLAB     | 6             | 75,000.00           |
+| VBA        | 6             | 75,000.00           |
+| HTML       | 6             | 75,000.00           |
+| Oracle     | 6             | 75,000.00           |
+| JavaScript | 6             | 75,000.00           |
+
+*Table of the most optimal skills for entry/junior/intern level Data Scientists sorted by demand count*
 
 # What I learned
 
