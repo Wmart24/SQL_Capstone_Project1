@@ -26,7 +26,7 @@ To explore the data job market, I made use of several important tools:
 # The Analysis
 Each query for this project aimed at investigating specific aspects of the data job market. Here's how I approached each question: 
 
-### 1. Available Entry Level//junior Data Analyst/Science /jobs or Internships
+### 1. Available Entry/Junior Level Data Analyst/Science Roles or Internships
 To identify the available roles I created two queries, one for data analyst and the other for data scientist positions, filtering them by average yearly salary and location, focusing on remote jobs along with those based in New York or Florida. This query highlights the available opportunities in the field.
 
 ```sql
@@ -455,4 +455,25 @@ Here's a breakdown of the most optimal skills for entry/junior/intern level Data
 
 # What I learned
 
+Throughout this journey, I significantly enhanced my SQL skills with powerful new capabilities:
+
+- **Complex Query Crafting:** Built strong SQL skills by learning how to combine tables smoothly and use WITH clauses to create easy-to-follow temporary tables
+- **Data Aggregation:** Learned how to use GROUP BY and started using functions like COUNT() and AVG() to quickly summarize and understand data.
+- **Analytical Skills:** Improved my ability to solve real-world problems by learning how to turn questions into helpful SQL queries. 
+
 # Conclusions
+###Insights
+1. **Available Entry/Junior Level Data Analyst/Science Roles or Internships**: Entry-level job availability in both data analytics and data science is strongest for remote positions, with steady hiring across the year and average salaries ranging from $40K–$75K. Common titles like “Junior” or “Intern” roles dominate listings, and a few companies are responsible for a large share of postings.
+2. **Skills for Available Jobs**: Required skills for these roles consistently emphasize technical foundations—SQL, Python, and Excel for analysts; Python, SQL, and machine learning frameworks for data scientists. Visualization tools like Tableau and Power BI, as well as collaboration tools like Jupyter and Git, are also frequently requested.
+3. **In Demand Skills for Entry/Junior Level Roles and Internships**: High-demand skills include SQL, Excel, and Python for analysts and Python, SQL, and R for data scientists. These tools appeared in thousands of job postings, reinforcing their essential role in early-career success across both fields.
+4. **Skills Based on Salary**: Top-paying skills for analysts include cross-functional tools like Docker, Jenkins, and Java ($100K+), while data scientists command the highest salaries with Hadoop, Airflow, and specialized tools like Scala and Spark (ranging from $95K–$115K). Foundational skills like SQL and Python offer solid pay but are more common, reducing their salary premium.
+5. **Most Optimal Skills to Learn**: Optimal skills to learn balance high demand and strong salary potential. For analysts, tools like Tableau, Python, and Excel offer the best returns. For data scientists, Python, SQL, and R top the list, while niche tools like Databricks and SAS also unlock high-paying, specialized roles.
+
+###Closing Thoughts
+
+This project significantly strengthened my SQL skills and deepened my understanding of the current job market for entry-level roles in both data analytics and data science. By analyzing real job posting data, I identified which roles are most available, which skills are most in-demand, and which tools lead to higher salaries. For beginners like myself, this information is incredibly valuable, it offers a clear roadmap to focus on foundational tools like SQL, Python, and Excel, while also highlighting the benefit of learning high-paying, specialized tools like Tableau, R, and Databricks. Most importantly, this project reinforced the importance of continuously adapting to industry trends and building a versatile skillset to stay competitive in the evolving data landscape.
+
+
+
+
+
